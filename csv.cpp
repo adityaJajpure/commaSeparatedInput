@@ -22,11 +22,6 @@ struct tokens: std::ctype<char>
         return &rc[0];
     }
 };
-typedef struct myStruct{
-    char book_name[100];
-    char name[100];
-    char date[10];
-};
 int main(){
 FILE *ptr = fopen("adi.txt","r");
 if(ptr!=NULL)
@@ -47,14 +42,8 @@ if(ptr!=NULL)
                     cout<<temp<<endl;
                     if(count==3) break;
                 }
-            //std::istream_iterator<std::string> begin(ss);
-            //std::istream_iterator<std::string> end;
-            //std::vector<std::string> vstrings(begin, end);
-           // cout<<vstrings.begin();
-            //int i=0;
-            //std::copy(vstrings.begin(), vstrings.end(), myStruct[i].book_name);
         }
     }
     else{
-        perror("somya.txt");}
+        perror("adi.txt");}
 }
